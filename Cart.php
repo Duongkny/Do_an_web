@@ -77,7 +77,7 @@
                 <input type="submit" value="Thanh toán" name="btnThanhToan">
             </form>
             <?php
-            if (isset($_POST['btnThanhToan']) ) {
+            if (isset($_POST['btnThanhToan'])) {
                 $sqlDelete = "DELETE FROM goinuoc";
                 if ($conn->query($sqlDelete) === TRUE) {
                     echo "<script>alert('Thanh toán thành công! Giỏ hàng đã được làm mới.'); </script>";

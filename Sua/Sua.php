@@ -35,7 +35,7 @@ include '../KetNoi/db.php';
                             <a href="Sua.php">Cập nhật sản phẩm</a>
                         </div>
                     </div>
-                    <li><a href="Cart.php">Giỏ hàng</a></li>
+                    <li><a href="../Cart.php">Giỏ hàng</a></li>
                 </ul>
             </nav>
         </header>

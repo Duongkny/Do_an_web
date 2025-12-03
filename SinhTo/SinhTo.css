@@ -5,7 +5,7 @@
     flex-wrap: wrap;
 }
 .column{
-    flex: 20%;
+    flex: 40%;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
@@ -23,6 +23,13 @@ p{
     font-size: 16px;
     color: #555;
 }
+.number{
+    width: 60px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}   
 .button{
     background-color: #4CAF50;
     color: white;

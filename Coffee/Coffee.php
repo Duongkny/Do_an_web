@@ -70,6 +70,10 @@
         $sql = "SELECT * FROM Menu WHERE Loai='Coffee'";
         $result = $conn->query($sql);
 
+
+       ?>
+<?php
+
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
         ?>
@@ -79,14 +83,14 @@
                         <div class="row">
                             <div class="column">
                                 <h2><?php echo $row['TenSP'] ?></h2>
-                                <img src="../img/<?php echo $row['HinhAnh'] ?>" class="drink-image">
+                                <img src="../img/<?php echo $row['HinhAnh'] ?>  "  class="drink-image">
                                 <p><?php echo $row['Gia'] ?></p>
 
                                 <!-- Gửi dữ liệu cần thiết -->
                                 <input type="hidden" name="MaSP" value="<?php echo $row['MaSP']; ?>">
                                 <input type="hidden" name="Gia" value="<?php echo $row['Gia']; ?>">
                                 <p>Số lượng hiện tại : <?php echo $row['SoLuong'] ?> </p>
-                                <input type="number" name="SoLuong" value="1" min="1">
+                                <input type="number" class="number" name="SoLuong" value="1" min="1">
 
                                 <input type="submit" class="button" value="Thêm vào giỏ hàng">
                             </div>
@@ -99,6 +103,8 @@
             }
         }
         ?>
+
+
 
 
         <footer>

@@ -19,7 +19,7 @@
                     <div class="drowdown">
                         <li class="dropbtn"><a href="#">Order nước</a></li>
                         <div class="dropdown-content">
-                            <a href="../TraSua/TraSua.html">Trà sữa</a>
+                            <a href="../TraSua/TraSua.php">Trà sữa</a>
                             <a href="../SinhTo/SinhTo.php">Sinh tố</a>
                             <a href="../Coffee/Coffee.php">Coffee</a>
                         </div>

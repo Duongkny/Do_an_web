@@ -57,6 +57,47 @@ main {
     padding: 20px;
     text-align: center;
 }
+/* ===== FIX CỨNG SLIDESHOW KHÔNG MÉO ẢNH ===== */
+
+/* ===== FIX TRIỆT ĐỂ CHE ẢNH SLIDESHOW ===== */
+
+.slideshow-container {
+    width: 900px !important;
+    min-height: 500px !important;   /* ✅ ĐỔI height → min-height */
+    height: auto !important;        /* ✅ KHÔNG ÉP CỨNG NỮA */
+    margin: 40px auto;
+    position: relative;
+    overflow: visible !important;  /* ✅ KHÔNG CẮT */
+    border-radius: 15px;
+    background: white;
+}
+
+.slideshow-container .slide {
+    width: 100% !important;
+    height: auto !important;        /* ✅ CHO PHÉP TỰ DÃN */
+    display: none;
+    text-align: center;
+}
+
+.slideshow-container .slide img {
+    width: 100% !important;
+    height: auto !important;        /* ✅ QUAN TRỌNG */
+    max-height: 500px;              /* ✅ CHỐNG ẢNH QUÁ TO */
+    object-fit: contain !important;
+    display: block;
+    margin: auto;
+}
+
+
+.fade {
+    animation: fade 1.2s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
 footer {
     background-color: #4CAF50;
     color: white;
